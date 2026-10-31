@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────────────────────
+   THE VEIL – Design Tokens & Global Styles
+   Victorian occult Ouija board aesthetic
+   ───────────────────────────────────────────────────────── */
+
+@theme {
+  --color-veil-black: #0a0808;
+  --color-veil-charcoal: #1a1614;
+  --color-veil-wood-dark: #2a1f17;
+  --color-veil-wood: #3d2b1f;
+  --color-veil-wood-light: #5c3d2e;
+  --color-veil-gold: #c9a84c;
+  --color-veil-gold-dim: #8b7635;
+  --color-veil-gold-bright: #e8c860;
+  --color-veil-amber: #d4a24e;
+  --color-veil-sepia: #b8956a;
+  --color-veil-cream: #e8dcc8;
+  --color-veil-bone: #d4c5a9;
+  --color-veil-ember: #ff6b35;
+  --color-veil-blood: #8b1a1a;
+  --color-veil-spirit: #c9a84c33;
+
+  --font-cinzel: "Cinzel", serif;
+  --font-cinzel-decorative: "Cinzel Decorative", serif;
+  --font-fell: "IM Fell English", serif;
+}
+
+/* ─── Reset & Base ─── */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--color-veil-black);
+  color: var(--color-veil-cream);
+  font-family: var(--font-fell);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-veil-charcoal);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-veil-gold-dim);
+  border-radius: 3px;
+}
+
+::selection {
+  background: var(--color-veil-gold);
+  color: var(--color-veil-black);
+}
